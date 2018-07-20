@@ -18,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/IBM-Swift/BlueSocket.git", .upToNextMajor(from: "1.0.0")),
         .package(url: "https://github.com/IBM-Swift/BlueSSLService.git", .upToNextMajor(from: "1.0.0")),
-        .package(url: "https://github.com/apple/swift-nio.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/apple/swift-nio.git", .branch("master")),
         .package(url: "https://github.com/apple/swift-nio-ssl.git", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [

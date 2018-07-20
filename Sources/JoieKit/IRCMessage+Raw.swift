@@ -94,7 +94,7 @@ extension RawIRCMessage {
 extension RawIRCMessage {
     static func parse(_ line: String) throws -> IRCMessage.Raw {
         guard let m = IRCMessage.Raw.RE.firstMatch(in: line, options: [], range: line.nsRange) else {
-            throw IRCError.malformedMessage(rawMessage: line)
+            fatalError("bad regex")
         }
         
         let tags = m.range(withName: "tags")

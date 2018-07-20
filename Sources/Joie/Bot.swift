@@ -7,8 +7,4 @@
 
 import JoieKit
 
-public class Bot: IRCSessionDelegate {
-    public func handle(message: IRCMessage) {
-        print(message)
-    }
-}
+
